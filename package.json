@@ -1,0 +1,20 @@
+{
+  "name": "nuban-prediction",
+  "version": "1.1.1",
+  "description": "Predict banks using account number",
+  "keywords": [
+    "nuban"
+  ],
+  "license": "ISC",
+  "author": "Ikegbulam Ugochukwu Paul",
+  "type": "commonjs",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "nigeria-phone-number-validator": "^1.0.4"
+  }
+}
