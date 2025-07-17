@@ -1,6 +1,7 @@
 {
   "name": "nuban-prediction",
-  "version": "1.1.1",
+  "version": "1.1.2",
+  "homepage": "https://github.com/Blockroll-Tech/nuban-bank-prediction",
   "description": "Predict banks using account number",
   "keywords": [
     "nuban"
