@@ -22,7 +22,7 @@ function getPredictedBanks(input) {
     let fintechsToReturn = [...fintechs.data];
     if (input.startsWith("90") || input.startsWith("81")) {
       fintechsToReturn.push({
-        "name": "Moniepoint MFB",
+        "name": "MONIEPOINT MICROFINANCE BANK",
         "code": "50515"
       });
     }
@@ -33,7 +33,7 @@ function getPredictedBanks(input) {
     const moniepointPrefixes = ["56", "54", "81", "50", "53", "55", "82", "63", "58", "57", "59", "65", "90"];
     const isMoniepointNuban = moniepointPrefixes.some(prefix => input.startsWith(prefix));
 
-    const moniepointIndex = bank.findIndex(b => b.name === "Moniepoint MFB");
+    const moniepointIndex = bank.findIndex(b => b.name === "MONIEPOINT MICROFINANCE BANK");
 
     if (moniepointIndex !== -1 && isMoniepointNuban) {
       const moniepointBank = bank.splice(moniepointIndex, 1)[0];
@@ -41,29 +41,29 @@ function getPredictedBanks(input) {
     }
 
     const popularBanks = [
-      "OPay Digital Services Limited (OPay)",
-      "Moniepoint MFB",
-      "Paga",
-      "Kuda Bank",
-      "PalmPay",
-      "United Bank For Africa",
-      "Ecobank Nigeria",
-      "Carbon",
-      "Providus Bank",
-      "Union Bank of Nigeria",
-      "Polaris Bank",
-      "Sterling Bank",
-      "Paystack-Titan",
-      "9mobile 9Payment Service Bank",
-      "Zenith Bank",
-      "First Bank of Nigeria",
+      "OPAY",
+      "MONIEPOINT MICROFINANCE BANK",
+      "PAGA",
+      "KUDA MICROFINANCE BANK",
+      "PALMPAY",
+      "UNITED BANK FOR AFRICA",
+      "ECOBANK",
+      "CARBON",
+      "PROVIDUS BANK",
+      "UNION BANK OF NIGERIA",
+      "POLARIS BANK",
+      "STERLING BANK",
+      "TITAN-PAYSTACK",
+      "9 Payment Service Bank",
+      "ZENITH BANK",
+      "FIRST BANK OF NIGERIA",
       "Fairmoney Microfinance Bank",
-      "Access Bank",
-      "Access Bank (Diamond)",
-      "Guaranty Trust Bank",
-      "Wema Bank",
-      "Airtel Smartcash PSB",
-      "Titan Bank",
+      "ACCESS BANK",
+      "ACCESS(DIAMOND) BANK",
+      "GTBANK PLC",
+      "WEMA BANK",
+      "SMARTCASH PAYMENT SERVICE BANK",
+      "TITAN TRUST BANK",
     ];
 
     // Create a new array for sorted banks
@@ -84,6 +84,6 @@ function getPredictedBanks(input) {
   }
 }
 
-//console.log(getPredictedBanks("0056666716"));
+//console.log(getPredictedBanks("6364246565"));
 
 module.exports = getPredictedBanks;
